@@ -1,0 +1,97 @@
+/* Theme name: Woof */
+@import url('css/normalize.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main-home{
+    display: flex;
+    justify-content: center;
+}
+#content-home{
+    width: 70%;
+}
+#titulo-content-home{
+    margin-top: 40px;
+    text-align: center;
+}
+#categorias-content-home{
+    margin: 5px 0;
+}
+#texto-pratos-principais{
+    margin-top: 40px;
+}
+.menu-categorias-container{
+   
+    margin: 10px 10px;
+}
+.menu-categorias-container ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item-119{
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+}
+.menu-item-120{
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+}
+.menu-item-121{
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+}
+.menu-item-122{
+    width: 22%;
+    text-align: center;
+    font-size: 30px;
+}
+.dia-da-semana{
+    padding-top: 5px;
+    font-size: 24px;
+}
+#pratos-dia{
+    margin-top: 20px;
+}
+#pratos-dia .lista-produtos{
+    display: flex;
+    flex-wrap: wrap;
+}
+#pratos-dia .lista-produtos li{
+    width: 22%;
+    padding: 0 1.5%;
+}
+
+#content-home #pratos-dia .info-produto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#content-home #pratos-dia .info-produto img{
+    width: 100%;
+    height: 70%;
+}
+#content-home #pratos-dia .info-produto h2{
+    padding-top: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+#Opcoes{
+    display: flex;
+    justify-content: center;
+}
+#Opcoes input{
+    background-color: #F5C661;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+}
