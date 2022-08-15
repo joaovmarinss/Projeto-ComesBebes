@@ -1,5 +1,4 @@
-/* Theme name: Woof */
-@import url('css/normalize.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -65,10 +64,10 @@ a{
 #pratos-dia .lista-produtos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #pratos-dia .lista-produtos li{
     width: 22%;
-    padding: 0 1.5%;
 }
 
 #content-home #pratos-dia .info-produto{

@@ -1,5 +1,3 @@
-
-
 <?php
     function meu_estilo_css(){
         add_theme_support('woocommerce');
