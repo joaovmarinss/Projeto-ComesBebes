@@ -1,4 +1,4 @@
-
+body{font-family: 'Roboto';font-size: 18px; }
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +20,6 @@ a{
     margin-top: 40px;
     text-align: center;
 }
-#categorias-content-home{
-    margin: 5px 0;
-}
 #texto-pratos-principais{
     margin-top: 40px;
 }
@@ -38,11 +35,15 @@ a{
     width: 22%;
     text-align: center;
     font-size: 30px;
+
 }
 .menu-item-120{
     width: 22%;
     text-align: center;
     font-size: 30px;
+}
+.menu-item-120 a{
+    background-image: none;
 }
 .menu-item-121{
     width: 22%;
@@ -87,10 +88,66 @@ a{
 #Opcoes{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 #Opcoes input{
     background-color: #F5C661;
     color: black;
     border: none;
     padding: 5px 10px;
+}
+#all-visite-loja{
+    background-color: #7A247D;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+#visite-loja{
+    color: white;
+    width: 70%; 
+}
+#text-visite-loja{
+    text-align: center;
+    padding: 20px 0;
+}
+.foto-pessoas{
+    width: 35vw;
+    height: 40vh;
+}
+#all-content-loja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-palavras{
+    display: flex;
+    margin: 10px 0;
+}
+.espacamento{
+    padding: 0 5px;
+}
+#home-comes-bebes{
+    background-color: #7A247D;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+#home-comes-bebes-content{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home-comes-bebes-titulo{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #F5C661;
+    padding-bottom: 15px;
+}
+#home-comes-bebes-text{
+    color: white;
 }

@@ -9,7 +9,7 @@
       function woof_css(){
         wp_register_style('woof', get_template_directory_uri() . '/' . 'style.css', [], '1.0.0');
         wp_enqueue_style('woof', get_template_directory_uri() . '/' . 'style.css', [], '1.0.0');
-      }
+        }
       add_action( 'wp_enqueue_scripts', 'woof_css');
 
     function resgistrar_menu(){
@@ -42,6 +42,22 @@
       ];
       return wc_get_products($args);
     }
+
+    function transforma_menu($itens){
+      foreach($itens as $item){
+        $thumbnail_id = get_term_meta($item->object_id, 'thumbnail_id', true);
+        $image = wp_get_attachment_url($thumbnail_id);
+        $css = 'background-image: url('. $image .')';
+        $item->title = 
+        '<div class="Categoria-content" style="'. $css .';">
+          <div class="Categoria-titulo">
+            <p class="Title">'.$item->title.'</p>
+          </div>
+        </div>';
+      }
+      return $itens;
+    }
+    add_filter('wp_nav_menu_objects', 'transforma_menu');
 
     require "inc/exibir-produtos.php";
     
