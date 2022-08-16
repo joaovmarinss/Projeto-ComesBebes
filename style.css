@@ -3,6 +3,7 @@
 @import url('css/home.css');
 @import url('css/show_product.css');
 @import url('css/single-product.css');
+@import url('css/header.css');
 
 #main-carrinho{
     display: flex;
