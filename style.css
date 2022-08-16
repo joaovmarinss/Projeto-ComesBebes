@@ -1,48 +1,55 @@
 /* Theme name: Woof */
 @import url('css/normalize.css');
 @import url('css/home.css');
+@import url('css/show_product.css');
+@import url('css/single-product.css');
 
-#main-all-product{
+#main-carrinho{
     display: flex;
     justify-content: center;
 }
-#all-product{
+#main-carrinho-content{
     width: 70%;
 }
-#all-filters-paginação{
+.atualiza{
     display: flex;
     flex-direction: column;
-}
-#all-product-paginacao{
-    display: flex;
     justify-content: center;
-}
-#ordencao-por .woocommerce-ordering{
-    display: block;
-}
-#show-all-products{
-    display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0;
+    border: 1px solid red;
 }
-#show-all-products .info-produto{
-    text-align: center;
+#main-carrinho-content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    border: 1px solid red;
 }
-#show-all-products .lista-produtos{
-    display: flex;
-    flex-wrap: wrap;
-    width: 22%;
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+    float: none;
+    width: auto;
 }
 
-#show-all-products .info-produto img{
-    width: 100%;
-    height: 70%;
+
+
+#all-visite-loja{
+    background-color: #7A247D;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
-#show-all-products .info-produto h2{
-    padding-top: 10px;
-    width: 100%;
-    font-size: 12px;
+#visite-loja{
+    color: white;
+    width: 70%; 
+}
+#text-visite-loja{
+    text-align: center;
+    padding: 20px 0;
+}
+.img-palavras{
+    display: flex;
+    margin: 10px 0;
+}
+.espacamento{
+    padding: 0 5px;
 }
