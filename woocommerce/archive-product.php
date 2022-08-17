@@ -10,7 +10,7 @@
         
 
 
-        echo "<h1>Categorias</h1>";
+        echo "<h1>SELECIONE UMA CATEGORIA</h1>";
 
         wp_nav_menu(['menu' => 'categorias']);
         ?>

@@ -26,7 +26,7 @@ a{
 }
 .menu-categorias-container{
    
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 .menu-categorias-container ul{
     display: flex;
@@ -74,29 +74,25 @@ a{
 #pratos-dia{
     margin-top: 20px;
 }
-#pratos-dia .lista-produtos{
+ .lista-produtos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#pratos-dia .lista-produtos li{
+ .lista-produtos li{
     width: 22%;
 }
 
-#content-home #pratos-dia .info-produto{
+ .info-produto{
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-#content-home #pratos-dia .info-produto img{
+.info-produto .img-show-produto img{
     width: 100%;
-    height: 70%;
+    height: 250px;
 }
-#content-home #pratos-dia .info-produto h2{
-    padding-top: 10px;
-    width: 100%;
-    font-size: 14px;
-}
+
 #Opcoes{
     display: flex;
     justify-content: center;

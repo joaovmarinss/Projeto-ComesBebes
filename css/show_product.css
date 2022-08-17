@@ -2,9 +2,7 @@
     display: flex;
     justify-content: center;
 }
-#all-product{
-    width: 70%;
-}
+
 #all-filters-paginação{
     display: flex;
     flex-direction: column;
@@ -12,27 +10,70 @@
 #all-product-paginacao{
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
+}
+#all-product{
+    width: 70%;
 }
 
+
+.carrinho-image{
+    background-color: #F5C661;
+    padding: 3px 3px 3px 2px;
+    width: 35px;
+    height: 30px;
+}
+.purple-background{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:linear-gradient(to right, rgba(109, 12, 111, 1) , rgba(109, 12, 111,0.4));
+}
+.nome-prato{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 5px 0 5px;
+}
+
+.conteudo-prato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.preco-conteudo{
+    color: white;
+    padding: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+.carrinho-link{
+    padding-right: 8px;
+}
+.info-produto .img-show-produto{
+    position: relative;
+}
+.info-produto .purple-background{
+    position: relative;
+    margin-top: -104px;
+}
 #show-all-products{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-#show-all-products .info-produto{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    gap: 27.9px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 #show-all-products .lista-produtos{
-    display: flex;
-    flex-wrap: wrap;
     width: 22%;
 }
-
-#show-all-products .info-produto img{
+#show-all-products .lista-produtos li{
     width: 100%;
+<<<<<<< HEAD
     height: 70%;
 }
 #show-all-products .info-produto h2{

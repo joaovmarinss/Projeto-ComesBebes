@@ -7,6 +7,10 @@
 @import url('css/footer.css');
 @import url('css/my_account.css');
 
+
+body{
+    font-family: 'Bellota Text', cursive;
+}
 #main-carrinho{
     display: flex;
     justify-content: center;
