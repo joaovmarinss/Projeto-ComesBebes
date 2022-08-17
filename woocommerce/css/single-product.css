@@ -1,0 +1,8 @@
+#main-show-single-product{
+    display: flex;
+    justify-content: center;
+}
+
+#show-single-product{
+width: 70%;
+}

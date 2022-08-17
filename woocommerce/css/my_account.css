@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+.page-template-default .woocommerce {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-MyAccount-navigation {
+    min-width: 100%;
+    background-color: #F5C661;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.woocommerce-MyAccount-navigation ul li a{
+    font-family: 'Bellota Text';
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+
+}
+
+.woocommerce-MyAccount-navigation ul {
+    display: flex;
+    justify-content: space-around;
+}
