@@ -71,4 +71,15 @@
       return $menu_links;
     }
 
+
+
+    add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
+    function misha_myaccount_required_fields( $account_fields ) {
+      unset( $account_fields[ 'account_last_name' ] );
+      unset( $account_fields[ 'account_first_name' ] ); // First name
+      unset( $account_fields[ 'account_display_name' ] ); // Display name
+      return $account_fields;
+        
+    }
+
 ?>
