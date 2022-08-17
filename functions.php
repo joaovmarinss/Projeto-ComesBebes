@@ -65,6 +65,5 @@
       wp_enqueue_script( 'header-script', get_template_directory_uri() . '/header-script.js');
       }
       add_action('wp_enqueue_scripts','my_theme_scripts_function');
-  
-
+      //ajhscuhacuihaishbciabhcibacabsciubacba
 ?>
