@@ -1,0 +1,34 @@
+/* Theme name: Woof */
+@import url('css/normalize.css');
+@import url('css/home.css');
+@import url('css/show_product.css');
+@import url('css/single-product.css');
+@import url('css/header.css');
+@import url('css/footer.css');
+@import url('css/my_account.css');
+
+#main-carrinho{
+    display: flex;
+    justify-content: center;
+}
+#main-carrinho-content{
+    width: 70%;
+}
+.atualiza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+#main-carrinho-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+    float: none;
+    width: auto;
+}

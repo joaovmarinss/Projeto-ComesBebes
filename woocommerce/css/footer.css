@@ -1,0 +1,12 @@
+#divfooter{
+    margin-top: 3vh;
+    width: 100%;
+    background-color: #F5C661;
+    color: black;
+    font-family: 'Bellota Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px;
+    text-align: center;
+}
