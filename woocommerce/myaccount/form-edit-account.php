@@ -17,9 +17,16 @@
 
 defined( 'ABSPATH' ) || exit;
 
+wc_get_template(
+	'myaccount/dashboard.php',
+	array(
+		'current_user' => get_user_by( 'id', get_current_user_id() ),
+	)
+);
+
 do_action( 'woocommerce_before_edit_account_form' ); ?>
 
-<form class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
+<form id="edit_account" class="woocommerce-EditAccountForm edit-account" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
 
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 
@@ -64,5 +71,6 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 
 	<?php do_action( 'woocommerce_edit_account_form_end' ); ?>
 </form>
+
 
 <?php do_action( 'woocommerce_after_edit_account_form' ); ?>
