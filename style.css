@@ -5,6 +5,7 @@
 @import url('css/single-product.css');
 @import url('css/header.css');
 @import url('css/footer.css');
+@import url('css/my_account.css');
 
 #main-carrinho{
     display: flex;
