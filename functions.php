@@ -62,6 +62,13 @@
 
     require "inc/exibir-produtos.php";
     
+    add_filter( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
 
+    function misha_remove_my_account_links( $menu_links ){
+      unset( $menu_links[ 'downloads' ] ); // Disable Downloads
+      unset( $menu_links[ 'edit-account' ] ); // Remove Account details tab
+     
+      return $menu_links;
+    }
 
 ?>
