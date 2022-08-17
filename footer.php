@@ -1,7 +1,6 @@
     <footer>
-        
+        <div id="divfooter">@ Copyright 2022 - Desenvolvido por Grupo NaN</div>
     </footer>
-    <script type="text/javascript" src="js/add-tag.js"></script>
     <?php wp_footer(); ?>
 </body>
 </html>
