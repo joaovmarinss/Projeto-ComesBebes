@@ -9,7 +9,8 @@
       function woof_css(){
         wp_register_style('woof', get_template_directory_uri() . '/' . 'style.css', [], '1.0.0');
         wp_enqueue_style('woof', get_template_directory_uri() . '/' . 'style.css', [], '1.0.0');
-        }
+        wp_enqueue_script('script', get_template_directory_uri() . '/header-script.js', ['jquery'], '1.0', true);
+      }
       add_action( 'wp_enqueue_scripts', 'woof_css');
 
     function resgistrar_menu(){
@@ -61,9 +62,6 @@
 
     require "inc/exibir-produtos.php";
     
-    function my_theme_scripts_function() {
-      wp_enqueue_script( 'header-script', get_template_directory_uri() . '/header-script.js');
-      }
-      add_action('wp_enqueue_scripts','my_theme_scripts_function');
-      //ajhscuhacuihaishbciabhcibacabsciubacba
+
+
 ?>

@@ -15,6 +15,7 @@ a{
 }
 #content-home{
     width: 70%;
+    margin-top: 30px;
 }
 #titulo-content-home{
     margin-top: 40px;
@@ -33,27 +34,38 @@ a{
 }
 .menu-item-119{
     width: 22%;
-    text-align: center;
     font-size: 30px;
-
+    min-width: 150px;
 }
 .menu-item-120{
     width: 22%;
-    text-align: center;
     font-size: 30px;
+    min-width: 150px;
 }
-.menu-item-120 a{
-    background-image: none;
+.Categoria-content{
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.Categoria-titulo{
+    font-size: 28px;
+    color: white;
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    height: auto;
+    background:linear-gradient(to right, rgba(109, 12, 111, 0.9) , rgba(109, 12, 111,0.4)) ;
 }
 .menu-item-121{
     width: 22%;
-    text-align: center;
     font-size: 30px;
+    min-width: 150px;
 }
 .menu-item-122{
     width: 22%;
-    text-align: center;
     font-size: 30px;
+    min-width: 150px;
 }
 .dia-da-semana{
     padding-top: 5px;
