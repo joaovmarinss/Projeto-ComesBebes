@@ -6,6 +6,7 @@
 @import url('css/header.css');
 @import url('css/footer.css');
 @import url('css/my_account.css');
+@import url('css/form_edit_account.css');
 
 #main-carrinho{
     display: flex;

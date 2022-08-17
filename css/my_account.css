@@ -3,6 +3,8 @@
 .page-template-default .woocommerce {
     display: flex;
     flex-direction: column;
+    font-family: 'Bellota Text';
+    align-items: center;
 }
 
 .woocommerce-MyAccount-navigation {
@@ -13,11 +15,10 @@
 }
 
 .woocommerce-MyAccount-navigation ul li a{
-    font-family: 'Bellota Text';
+
     font-weight: bold;
     font-size: 24px;
     color: black;
-
 }
 
 .woocommerce-MyAccount-navigation ul {
