@@ -25,3 +25,34 @@
     display: flex;
     justify-content: space-around;
 }
+
+.woocommerce-MyAccount-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.woocommerce-MyAccount-content label {
+    font-weight: bold;
+}
+
+.woocommerce-MyAccount-content input{
+    border: none;
+    border-bottom: solid 2px;
+    border-color: #6A066D;
+    background-color: #E7FAFE;
+}
+
+.woocommerce-address-fields p {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-address-fields p .button {
+    align-self: center;
+    background-color: #6A066D;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: max-content;
+}
