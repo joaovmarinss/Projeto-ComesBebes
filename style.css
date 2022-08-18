@@ -38,3 +38,7 @@ body{
     float: none;
     width: auto;
 }
+
+.insertp, .orderby, .search-field{
+    background-color: #E7FAFE;
+}

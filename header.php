@@ -11,7 +11,8 @@
     <header>
         <div id="content-box-h">
             <div id="left-box-h">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>\assets/ComeBebeIMG.png" id="cbi-h">
+                
+            <a id="cbi-h" href="http://projeto-comes-e-bebes.local/"><img src="<?php echo get_stylesheet_directory_uri() ?>\assets/ComeBebeIMG.png" ></a>
                 <div id="contentsearch-h" >
                 <form role="search" method="get" class="woocommerce-product-search" action="http://comes-e-bebes.local/">
 	                <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
