@@ -2,19 +2,31 @@
     display: none;
 }
 
-.woocommerce{
-    /*background-color: #E7FAFE;*/
-}
-
-.main-form{
+#form-btn-field{
     display: flex;
     justify-content: center;
-    width: 100vw;
-    padding: 0px;
-    margin: 0px;
-    background-color: red;
-    border: 0px;
 }
-#content-form{
-    width: 70%;
+
+/*.woocommerce-Input{
+    border: none;
+    border-bottom: solid 2px #6A066D;
+    background-color: #E7FAFE;
+}*/
+
+#form-content p{
+    margin: 1rem 0rem;
+}
+
+#form-text{
+    margin: 0 0 -1rem 0;
+}
+
+#edit_account form{
+    background-color: red;
+    padding: -2rem 0rem 0rem 0rem;
+}
+
+#btn{
+    background-color: #6A066D;
+    color: white;
 }
