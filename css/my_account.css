@@ -56,3 +56,19 @@
     margin-bottom: 25px;
     width: max-content;
 }
+
+#billing_country_field {
+    display: none;
+}
+
+.woocommerce .col2-set, .woocommerce-page .col2-set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    gap: 25px;
+}
+
+.woocommerce-account .addresses .title {
+    width: 650px;
+}

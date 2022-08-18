@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div id="content-box-h">
             <div id="left-box-h">
                 
