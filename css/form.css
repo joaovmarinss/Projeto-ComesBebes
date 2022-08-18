@@ -34,3 +34,7 @@ label .required {
     background-color: #6A066D;
     color: white;
 }
+
+.show-password-input{
+    display: none;
+}
