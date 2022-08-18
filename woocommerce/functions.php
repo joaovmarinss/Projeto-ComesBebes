@@ -75,53 +75,11 @@
 
     add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
     function misha_myaccount_required_fields( $account_fields ) {
-      //unset( $account_fields[ 'account_last_name' ] );
-      //unset( $account_fields[ 'account_first_name' ] ); // First name
+      unset( $account_fields[ 'account_last_name' ] );
+      unset( $account_fields[ 'account_first_name' ] ); // First name
       unset( $account_fields[ 'account_display_name' ] ); // Display name
       return $account_fields;
         
     }
-
-    add_filter( 'woocommerce_default_address_fields', 'misha_remove_fields' );
-    function misha_remove_fields( $fields ) {
-      unset( $fields[ 'company' ] );
-      unset( $fields[ 'state' ] );
-      unset( $fields[ 'company' ][ 'required' ] );
-      unset( $fields[ 'country' ][ 'required' ] );
-      unset( $fields[ 'state' ][ 'required' ] );
-      return $fields;
-    }
-
-    add_filter( 'woocommerce_default_address_fields', 'misha_change_fname_field' );
-    function misha_change_fname_field( $fields ) {
-      $fields[ 'first_name' ][ 'placeholder' ] = 'Digite seu nome';
-      $fields[ 'last_name' ][ 'placeholder' ] = 'Digite seu sobrenome';
-      $fields[ 'postcode' ][ 'placeholder' ] = 'Digite seu CEP';
-      $fields[ 'postcode' ][ 'priority' ] = 30;
-      $fields[ 'address_1' ][ 'label' ] = 'Logradouro';
-      $fields[ 'address_1' ][ 'placeholder' ] = 'Rua e número';
-      $fields[ 'address_2' ][ 'label' ] = 'Complemento';
-      $fields[ 'address_2' ][ 'placeholder' ] = 'Complemento do seu endereço';
-      $fields[ 'address_2' ][ 'label_class' ] = [];
-      $fields[ 'address_2' ][ 'required' ] = true;
-      $fields[ 'city' ][ 'placeholder' ] = 'Sua cidade';      
-      $fields[ 'city' ][ 'class' ] = array( 'form-row-last' ); 
-   
-      return $fields;
-    }
-
-    add_filter( 'woocommerce_default_address_fields', 'misha_add_field' );
-    function misha_add_field( $fields ) {
-      
-      $fields[ 'district' ]   = array(
-        'label'        => 'Bairro',
-        'required'     => true,
-        'class'        => array( 'form-row-first', 'my-custom-class' ),
-        'priority'     => 80,
-        'placeholder'  => 'Seu bairro',
-      );
-      
-      return $fields;
-}
 
 ?>
