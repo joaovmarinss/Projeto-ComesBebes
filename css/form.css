@@ -21,6 +21,10 @@
     margin: 0 0 -1rem 0;
 }
 
+label .required {
+    display: none;
+}
+
 #edit_account form{
     background-color: red;
     padding: -2rem 0rem 0rem 0rem;
