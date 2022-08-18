@@ -11,9 +11,9 @@
 
 
         echo "<h1>SELECIONE UMA CATEGORIA</h1>";
-
-        wp_nav_menu(['menu' => 'categorias']);
         ?>
+        <?php wp_nav_menu(['menu' => 'categorias']); ?>
+        
         <div id="all-filters-paginação">
             <h2>Pratos</h2>
             <div id="busca">

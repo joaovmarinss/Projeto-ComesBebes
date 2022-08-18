@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Bellota Text', cursive;
+    background-color: #E7FAFE;
 }
 #main-carrinho{
     display: flex;
