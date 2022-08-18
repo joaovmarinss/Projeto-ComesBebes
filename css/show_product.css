@@ -64,7 +64,7 @@
 #show-all-products{
     display: flex;
     flex-wrap: wrap;
-    gap: 27.9px;
+    gap: 30px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -73,6 +73,13 @@
 }
 #show-all-products .lista-produtos li{
     width: 100%;
+<<<<<<< HEAD
+}
+
+.menu_active {
+    padding: 5px 5px 5px 5px;
+    border: 3px solid #C839CD;
+=======
 <<<<<<< HEAD
     height: 70%;
 }
@@ -133,4 +140,5 @@
 }
 .insertp:focus{
     border-bottom:#7A247D solid 2px  ;
+>>>>>>> 5090745dec55b3f8ef5a7a3207c900bc5bc67b6b
 }

@@ -27,6 +27,7 @@
 
 body{
     font-family: 'Bellota Text', cursive;
+    background-color: #E7FAFE;
 }
 #main-carrinho{
     display: flex;
@@ -52,4 +53,8 @@ body{
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
     float: none;
     width: auto;
+}
+
+.insertp, .orderby, .search-field{
+    background-color: #E7FAFE;
 }

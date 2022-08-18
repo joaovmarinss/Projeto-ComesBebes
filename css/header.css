@@ -7,8 +7,6 @@ textarea:focus, input:focus, select:focus {
 } 
 header{
     background-color: #7A247D;
-    width: auto;
-    height: auto;
     display: flex;
     justify-content: center;
 }

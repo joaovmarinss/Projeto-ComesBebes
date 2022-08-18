@@ -10,51 +10,30 @@
         
 
 
-        echo "<h1>SELECIONE UMA CATEGORIA</h1>";
+        echo "<h1>Categorias</h1>";
 
         wp_nav_menu(['menu' => 'categorias']);
         ?>
         <div id="all-filters-paginação">
             <h2>Pratos</h2>
             <div id="busca">
-            <p>Buscar por Nome:<p\>
-            <form role="search" method="get" class="woocommerce-product-search" action="http://comes-e-bebes.local/">
-	                <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
-                    <input type="search" id="woocommerce-product-search-field-ap" class="search-field" value="" name="s">
-	                <input type="hidden" name="post_type" value="product">
-                </form>
+                <?php get_product_search_form(); ?>
             </div>
             <div id="all-product-ordenacao">
-                <div id="ordencao-por">
-                    <p>Ordernar por:</p>
-                    <form class="woocommerce-ordering" method="get" id="selectorderf">
-                        <select name="orderby" class="orderby" aria-label="Pedido da loja" id="selectorder">
-                            <option value="menu_order" selected="selected"></option>
-                            <option value="popularity">Ordenar por popularidade</option>
-                            <option value="rating">Ordenar por média de classificação</option>
-                            <option value="date">Ordenar por mais recente</option>
-                            <option value="price">Ordenar por preço: menor para maior</option>
-                            <option value="price-desc">Ordenar por preço: maior para menor</option>
-                        </select>
-                        <input type="hidden" name="paged" value="1">
-                    </form>
-            
-                </div>
-                
                 <div id="preco-filtrado">
-                <p>Filtro de preço:</p>
-                <form class="filtro_preco" action="<?= $_SERVER['REQUEST_URI']; ?>" id="preco-filtradof">
+                    <form class="filtro_preco" action="<?= $_SERVER['REQUEST_URI']; ?>">
                     <div>
-                        <label for="min_price">De :</label>
-                        <input type="text" name="min_price" id="min_price" value="<?= $_GET['min_price']; ?>" class="insertp">
+                        <label for="min_price">De R$</label>
+                        <input type="text" name="min_price" id="min_price" value="<?= $_GET['min_price']; ?>">
                     </div>
                     <div>
-                        <label for="max_price">Até :</label>
-                        <input type="text" name="max_price" id="max_price" value="<?= $_GET['max_price']; ?>" class="insertp">
+                        <label for="max_price">Até R$</label>
+                        <input type="text" name="max_price" id="max_price" value="<?= $_GET['max_price']; ?>">
                     </div>
+                        <button type="submit">Filtrar</button>
                     </form>
-
                 </div>
+                <div id="ordencao-por"><?php woocommerce_catalog_ordering();?></div>
 
                 
             </div>
