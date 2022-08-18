@@ -20,15 +20,8 @@
     background-color: #E7FAFE;
 }
 
-#btn{
-    background-color: #6A066D;
-    color: white;
-    font-family: 'Bellota Text', cursive;
-}
-
 body{
     font-family: 'Bellota Text', cursive;
-    background-color: #E7FAFE;
 }
 #main-carrinho{
     display: flex;
