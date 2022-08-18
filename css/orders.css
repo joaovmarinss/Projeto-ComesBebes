@@ -1,0 +1,18 @@
+.woocommerce table.shop_table {
+    border: none;
+    text-align: center;
+}
+
+.woocommerce table.shop_table td {
+    border: none;
+}
+
+.woocommerce table.shop_table a {
+    color: #6A066D;
+}
+
+.woocommerce table.my_account_orders .button {
+    color: #520054;
+    background-color: transparent;
+    border: solid 2px #6A066D;
+}
