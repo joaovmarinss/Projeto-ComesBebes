@@ -15,7 +15,8 @@
         wp_nav_menu(['menu' => 'categorias']);
         ?>
         <div id="all-filters-paginação">
-            <h2>Pratos</h2>
+            <h2>PRATOS</h2>
+            <h4 class="comida-de-categoria"></h4>
             <div id="busca">
                 <?php get_product_search_form(); ?>
             </div>

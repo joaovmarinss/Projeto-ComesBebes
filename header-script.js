@@ -20,15 +20,20 @@ const menunord = document.querySelector('.menu-item-119')
 const menuveg = document.querySelector('.menu-item-122')
 const menumas = document.querySelector('.menu-item-120')
 const menujap = document.querySelector('.menu-item-121')
+const titulo = document.querySelector('.comida-de-categoria')
 if(url_atual == url1){
     menumas.classList.add("menu_active")
+    titulo.innerHTML ='COMIDA MASSAS'
 }
 if(url_atual == url2){
     menunord.classList.add("menu_active")
+    titulo.innerHTML ='COMIDA NORDESTINA'
 }
 if(url_atual == url3){
     menuveg.classList.add("menu_active")
+    titulo.innerHTML ='COMIDA VEGANA'
 }
 if(url_atual == url4){
     menujap.classList.add("menu_active")
+    titulo.innerHTML ='COMIDA JAPONESA'
 }

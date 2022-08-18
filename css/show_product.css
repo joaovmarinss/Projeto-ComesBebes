@@ -86,9 +86,7 @@
     width: 100%;
     font-size: 12px;
 }
-#all-filters-paginação{
 
-}
 #busca{
     padding: 3px;
     border-bottom: solid 2px #7A247D ;
@@ -138,4 +136,7 @@
 }
 .insertp:focus{
     border-bottom:#7A247D solid 2px  ;
+}
+.comida-de-categoria{
+    margin-top: 5px;
 }

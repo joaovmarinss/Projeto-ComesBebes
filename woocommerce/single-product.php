@@ -3,7 +3,9 @@
     <div id="show-single-product">
     <?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
+        <div class="locous">
 		<?php wc_get_template_part( 'content', 'single-product' ); ?>
+        </div>
 	<?php endwhile; // end of the loop. ?>
     </div>
 </main>

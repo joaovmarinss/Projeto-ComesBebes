@@ -4,5 +4,77 @@
 }
 
 #show-single-product{
-width: 70%;
+    width: 70%;
+    margin-top: 45px;
+}
+#pa_porcoes{
+    border: none;
+    border-bottom: 2px solid #894391;
+    background-color: #E7FAFE;
+    height: 100%;
+}
+#compra-single{
+    margin-top: 15px;
+}
+.cart{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.content-escolha{
+    display: flex;
+    flex-direction: column;
+}
+.product_meta{
+    position: fixed;
+    right: 9000px;
+}
+.woocommerce div.product div.images{
+    width: 35%;
+    min-width: 245px;
+}
+.woocommerce div.product div.images img{
+    margin: 0;
+    width:100%;
+    min-width: 245px;
+    height: 100%;
+    min-height: 165px;
+}
+div.images.woocommerce-product-gallery{
+    float: none;
+}
+#sobre-o-produto{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.woocommerce-page div.product div.summary{
+    float: none;
+}
+.input-text{
+    background-color: #E7FAFE;
+}
+.single_variation_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+#right-buttom{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 18px;
+}
+.value{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+#tipo-categoria{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#tipo-categoria a{
+    pointer-events: none;
+    color: black;
 }
