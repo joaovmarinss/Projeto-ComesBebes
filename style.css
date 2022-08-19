@@ -8,7 +8,11 @@
 @import url('css/my_account.css');
 @import url('css/form.css');
 @import url('css/orders.css');
+
+@import url('css/cart.css');
+
 @import url('css/checkout.css');
+
 
 
 .woocommerce{
@@ -24,31 +28,7 @@
 body{
     font-family: 'Bellota Text', cursive;
 }
-#main-carrinho{
-    display: flex;
-    justify-content: center;
-}
-#main-carrinho-content{
-    width: 70%;
-}
-.atualiza{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid red;
-}
-#main-carrinho-content{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    border: 1px solid red;
-}
-.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
-    float: none;
-    width: auto;
-}
+
 
 .insertp, .orderby, .search-field{
     background-color: #E7FAFE;
