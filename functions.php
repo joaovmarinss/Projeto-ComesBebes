@@ -63,24 +63,13 @@
 
     require "inc/exibir-produtos.php";
     
-    add_filter( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
-
-
-
-
-
-
-    function misha_remove_my_account_links( $menu_links ){
+    add_filter( 'woocommerce_account_menu_items', 'remove_my_account_links' );
+    function remove_my_account_links( $menu_links ){
       unset( $menu_links[ 'downloads' ] ); // Disable Downloads
       unset( $menu_links[ 'edit-account' ] ); // Remove Account details tab
      
       return $menu_links;
     }
-
-
-
-
-
 
     add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
     
@@ -147,38 +136,11 @@
     }
     add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
 
+    // add Painel no menu_links para alterar o hiperlink
+    add_filter ( 'woocommerce_account_menu_items', 'add_painel', 40 );
+    function add_painel( $menu_links ){
+      $menu_links = array( 'edit-account' => 'Painel' ) + array_slice( $menu_links, 1, 3, true );
+      return $menu_links;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //TESTE
-        // adição de URLs no menu de navegação das páginas my_account
-        add_filter( 'woocommerce_get_endpoint_url', 'hook_endpoint', 10, 2 );
-        function hook_endpoint( $url, $endpoint ){
-
-          if ( 'edit-adress' === $endpoint) {
-            $url = 'https://google.com';
-          }
-          else {
-            $url = 'a';
-          }
-          
-
-          if ( 'orders' === $endpoint) {
-            $url = 'https://google.com';
-          }
-
-          return $url;
-        }
 ?>
