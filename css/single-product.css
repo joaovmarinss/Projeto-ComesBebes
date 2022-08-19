@@ -70,11 +70,42 @@ div.images.woocommerce-product-gallery{
     justify-content: flex-end;
     margin-bottom: 10px;
 }
-#tipo-categoria{
+.tipo-categoria{
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-#tipo-categoria a{
+.tipo-categoria a{
     pointer-events: none;
     color: black;
 }
+.desliga{
+    pointer-events: none;
+}
+.alt{
+    text-transform: uppercase;
+    background-color: #8D4F92;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    float: none;
+    min-width: 240px;
+    min-height: 300px;
+    margin: 0;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.related{
+    display: flex;
+    flex-direction: column;
+}
+.woocommerce ul.products li.product a img{
+    height: 45vh;
+}
+

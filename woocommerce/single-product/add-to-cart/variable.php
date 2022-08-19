@@ -49,8 +49,10 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                             
 						</td>
                         <td id="right-buttom">
-                            <button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( 'Adicionar' ); ?></button>
-                        </td>
+							
+                            <input type="submit" class="single_add_to_cart_button alt" value="Adicionar"></input>
+							
+						</td>
 					</tr>
 				<?php endforeach; ?>
 			</tbody>

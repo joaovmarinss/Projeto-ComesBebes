@@ -21,6 +21,12 @@ const menuveg = document.querySelector('.menu-item-122')
 const menumas = document.querySelector('.menu-item-120')
 const menujap = document.querySelector('.menu-item-121')
 const titulo = document.querySelector('.comida-de-categoria')
+const btnenvia = document.querySelector('.alt')
+btnenvia.addEventListener("click", () => {
+    window.location.href = url_atual;
+    console.log("gabriel")
+})
+
 if(url_atual == url1){
     menumas.classList.add("menu_active")
     titulo.innerHTML ='COMIDA MASSAS'
