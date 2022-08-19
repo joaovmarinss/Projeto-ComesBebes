@@ -33,6 +33,7 @@ label .required {
 #btn{
     background-color: #6A066D;
     color: white;
+    text-transform: uppercase;
 }
 
 .show-password-input{
