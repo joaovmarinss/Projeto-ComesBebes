@@ -26,6 +26,7 @@
     background-color: #D7F6FD;
     font-size: 14px;
     width: 30vw;
+    min-height: 92px;
     max-height: 92px;
     min-width: 385px;
     max-width: 385px;
@@ -44,6 +45,10 @@
 }
 .product_thumbnail a{
     display: none;
+}
+.woocommerce-page table.cart img{
+    height: 92px ;
+    max-width: 92px!important;
 }
 
 
@@ -71,7 +76,10 @@
     line-height: 1em;
 }
 
-
+.nav-links { 
+    display: flex;
+    gap: 5px;
+}
 @media only screen and (max-width: 768px){
 .woocommerce #content table.cart .product-thumbnail, .woocommerce table.cart .product-thumbnail, .woocommerce-page #content table.cart .product-thumbnail, .woocommerce-page table.cart .product-thumbnail {
      display: flex;
@@ -110,6 +118,7 @@ td.product-thumbnail::before{
 }
 td.product-thumbnail a img{
     width: 92px;
+    height: 92px;
 }
 td.product-quantity::before{
     display: none;
