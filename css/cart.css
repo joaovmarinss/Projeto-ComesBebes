@@ -26,6 +26,7 @@
     background-color: #D7F6FD;
     font-size: 14px;
     width: 30vw;
+    max-height: 92px;
     min-width: 385px;
     max-width: 385px;
     position: relative;
@@ -86,6 +87,7 @@ td.product-name::before{
     display: none;
 }
 td.product-name{
+    height: 50px;
     position: relative;
     left: -65px;
     top:5px;
@@ -105,6 +107,9 @@ td.product-price::before{
 }
 td.product-thumbnail::before{
     display: none;
+}
+td.product-thumbnail a img{
+    width: 92px;
 }
 td.product-quantity::before{
     display: none;

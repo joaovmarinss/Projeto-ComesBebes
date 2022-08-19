@@ -48,6 +48,9 @@ for(var a = 0; a<4; a++){
         break;
     }
 }
+const atualizar = document.querySelector(".actions")
+atualizar.firstElementChild.innerHTML='COMPRAR'
+
 function opencartao(){
     let cartao = document.querySelector("#cartaopag")
     cartao.style.display = 'block' ;
