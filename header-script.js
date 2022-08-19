@@ -39,6 +39,7 @@ if(url_atual == url4){
     menujap.classList.add("menu_active")
     titulo.innerHTML ='COMIDA JAPONESA'
 }
+
 for(var a = 0; a<4; a++){
     const img = document.createElement('img')
     if(ul_sin.children[a]){
@@ -46,4 +47,12 @@ for(var a = 0; a<4; a++){
     }else{
         break;
     }
+}
+function opencartao(){
+    let cartao = document.querySelector("#cartaopag")
+    cartao.style.display = 'block' ;
+}
+function exitcartao(){
+    let cartao = document.querySelector("#cartaopag")
+    cartao.style.display = 'none' ;
 }

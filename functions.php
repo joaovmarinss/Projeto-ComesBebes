@@ -63,14 +63,14 @@
 
     require "inc/exibir-produtos.php";
     
-    add_filter( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
-
-    function misha_remove_my_account_links( $menu_links ){
+    add_filter( 'woocommerce_account_menu_items', 'remove_my_account_links' );
+    function remove_my_account_links( $menu_links ){
       unset( $menu_links[ 'downloads' ] ); // Disable Downloads
       unset( $menu_links[ 'edit-account' ] ); // Remove Account details tab
      
       return $menu_links;
     }
+
     add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
     
     function link_2(){
@@ -127,12 +127,20 @@
       );
       
       return $fields;
-}
+    }
 
-      function custom_address_formats( $formats ) {
-        $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
-        return $formats;
-      }
-      add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
+
+    function custom_address_formats( $formats ) {
+      $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
+      return $formats;
+    }
+    add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
+
+    // add Painel no menu_links para alterar o hiperlink
+    add_filter ( 'woocommerce_account_menu_items', 'add_painel', 40 );
+    function add_painel( $menu_links ){
+      $menu_links = array( 'edit-account' => 'Painel' ) + array_slice( $menu_links, 1, 3, true );
+      return $menu_links;
+    }
 
 ?>
