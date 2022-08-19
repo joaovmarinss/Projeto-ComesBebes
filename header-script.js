@@ -21,11 +21,21 @@ const menuveg = document.querySelector('.menu-item-122')
 const menumas = document.querySelector('.menu-item-120')
 const menujap = document.querySelector('.menu-item-121')
 const titulo = document.querySelector('.comida-de-categoria')
-const btnenvia = document.querySelector('.alt')
-btnenvia.addEventListener("click", () => {
-    window.location.href = url_atual;
-    console.log("gabriel")
-})
+const ul_sin = document.querySelector('.columns-4')
+for(var a = 0; a<4; a++){
+    const img = document.createElement('img')
+    if(ul_sin.children[a]){
+        ul_sin.children[a].lastChild.innerHTML = '<img class="carrinho-image" src="http://projeto-comes-e-bebes.local/wp-content/themes/Projeto%20comes-bebes/assets/carrinho.png">'
+       
+        
+    }else{
+        break;
+    }
+
+}
+
+
+
 
 if(url_atual == url1){
     menumas.classList.add("menu_active")
