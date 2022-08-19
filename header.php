@@ -25,7 +25,9 @@
             <div id="right-box-h">
                 <button id="bttrqst-h">Faça um pedido</button>
                 <img onclick="carrinho()" src="<?php echo get_stylesheet_directory_uri() ?>\assets/CarIMG.png" id="carimg-h" >
-                <img src="<?php echo get_stylesheet_directory_uri() ?>\assets/UsuIMG.png" id="usuimg-h">
+                <a href="http://projeto-comes-e-bebes.local/my-account/edit-account/">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>\assets/UsuIMG.png" id="usuimg-h">
+                </a>
             </div>
         </div>
         <div id = "modalcarrinho-h">

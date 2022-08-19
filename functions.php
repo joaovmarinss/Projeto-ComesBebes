@@ -71,7 +71,7 @@
       return $menu_links;
     }
 
-    add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
+    add_filter( 'woocommerce_save_account_details_required_fields', 'myaccount_required_fields' );
     
     function link_2(){
       $link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -79,7 +79,7 @@
     }
     add_filter('woocommerce_add_to_cart_redirect', 'link_2');
 
-    function misha_myaccount_required_fields( $account_fields ) {
+    function myaccount_required_fields( $account_fields ) {
       //unset( $account_fields[ 'account_last_name' ] );
       //unset( $account_fields[ 'account_first_name' ] ); // First name
       unset( $account_fields[ 'account_display_name' ] ); // Display name
@@ -87,8 +87,8 @@
         
     }
 
-    add_filter( 'woocommerce_default_address_fields', 'misha_remove_fields' );
-    function misha_remove_fields( $fields ) {
+    add_filter( 'woocommerce_default_address_fields', 'remove_fields' );
+    function remove_fields( $fields ) {
       unset( $fields[ 'company' ] );
       unset( $fields[ 'state' ] );
       unset( $fields[ 'company' ][ 'required' ] );
@@ -97,8 +97,8 @@
       return $fields;
     }
 
-    add_filter( 'woocommerce_default_address_fields', 'misha_change_fname_field' );
-    function misha_change_fname_field( $fields ) {
+    add_filter( 'woocommerce_default_address_fields', 'change_fname_field' );
+    function change_fname_field( $fields ) {
       $fields[ 'first_name' ][ 'placeholder' ] = 'Digite seu nome';
       $fields[ 'last_name' ][ 'placeholder' ] = 'Digite seu sobrenome';
       $fields[ 'postcode' ][ 'placeholder' ] = 'Digite seu CEP';
@@ -115,8 +115,8 @@
       return $fields;
     }
 
-    add_filter( 'woocommerce_default_address_fields', 'misha_add_field' );
-    function misha_add_field( $fields ) {
+    add_filter( 'woocommerce_default_address_fields', 'add_field' );
+    function add_field( $fields ) {
       
       $fields[ 'district' ]   = array(
         'label'        => 'Bairro',
@@ -131,7 +131,7 @@
 
 
     function custom_address_formats( $formats ) {
-      $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
+      $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p class='cep'> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
       return $formats;
     }
     add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');

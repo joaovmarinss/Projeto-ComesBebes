@@ -62,7 +62,7 @@
     display: none;
 }
 
-.woocommerce .col2-set, .woocommerce-page .col2-set {
+.u-columns.woocommerce-Addresses.col2-set.addresses {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -100,4 +100,8 @@
 .enderecos{
     display: flex;
     flex-direction: column;
+}
+
+.woocommerce-message{
+    background-color: #E7FAFE;
 }
