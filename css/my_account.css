@@ -101,3 +101,7 @@
     display: flex;
     flex-direction: column;
 }
+
+.woocommerce-message{
+    background-color: #E7FAFE;
+}
