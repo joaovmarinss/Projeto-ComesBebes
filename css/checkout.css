@@ -1,0 +1,73 @@
+#infpag{
+    width: 40%;
+}
+#butspag{
+    padding-top: 2vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh ;
+}
+#dinheiro{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    background-color: #fafafa;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#dinheiro:hover{
+    cursor: pointer;
+}
+#cartao:hover{
+    cursor: pointer;
+}
+#cartao{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    background-color: #fafafa;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+#cartaopag{
+    display: none;
+}
+#inpnum{
+    border: none;
+    background-color: #E7FAFE;
+    border-bottom: solid 2px #7A247D ; ;
+    margin-top: 2vh;
+    width: 100%;
+}
+#valcvv{
+   margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+#val{
+    width: 47%;
+}
+#inpval{
+    border: none;
+    background-color: #E7FAFE;
+    border-bottom: solid 2px #7A247D ; ;
+    margin-top: 2vh;
+    width: 100%;
+}
+#cvv{
+    width: 47%;
+}
+#inpcvv{
+    border: none;
+    background-color: #E7FAFE;
+    border-bottom: solid 2px #7A247D ; ;
+    margin-top: 2vh;
+    width: 106%;
+
+}
+#titleinf{
+    margin-bottom: 4vh;
+}
