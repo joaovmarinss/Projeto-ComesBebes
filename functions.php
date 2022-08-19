@@ -65,12 +65,23 @@
     
     add_filter( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
 
+
+
+
+
+
     function misha_remove_my_account_links( $menu_links ){
       unset( $menu_links[ 'downloads' ] ); // Disable Downloads
       unset( $menu_links[ 'edit-account' ] ); // Remove Account details tab
      
       return $menu_links;
     }
+
+
+
+
+
+
     add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
     
     function link_2(){
@@ -127,12 +138,47 @@
       );
       
       return $fields;
-}
+    }
 
-      function custom_address_formats( $formats ) {
-        $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
-        return $formats;
-      }
-      add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
 
+    function custom_address_formats( $formats ) {
+      $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
+      return $formats;
+    }
+    add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //TESTE
+        // adição de URLs no menu de navegação das páginas my_account
+        add_filter( 'woocommerce_get_endpoint_url', 'hook_endpoint', 10, 2 );
+        function hook_endpoint( $url, $endpoint ){
+
+          if ( 'edit-adress' === $endpoint) {
+            $url = 'https://google.com';
+          }
+          else {
+            $url = 'a';
+          }
+          
+
+          if ( 'orders' === $endpoint) {
+            $url = 'https://google.com';
+          }
+
+          return $url;
+        }
 ?>
