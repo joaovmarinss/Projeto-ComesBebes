@@ -124,4 +124,10 @@
       return $fields;
 }
 
+      function custom_address_formats( $formats ) {
+        $formats[ 'default' ]  = " <div class='nome-cep'> <p> {name} </p> <p> {postcode} </p> </div> <div class='enderecos'> {company} <p> {address_1} </p> <p> {address_2} </p> <p> {city} </p> </div>";
+        return $formats;
+      }
+      add_filter('woocommerce_localisation_address_formats', 'custom_address_formats');
+
 ?>

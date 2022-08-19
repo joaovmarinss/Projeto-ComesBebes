@@ -65,10 +65,38 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 25px;
+    padding: 25px;
+    margin-left: 65px;
     gap: 25px;
 }
 
 .woocommerce-account .addresses .title {
     width: 650px;
+}
+
+.woocommerce-account .addresses .title .edit {
+    position: relative;
+    top: 35px;
+    color: #09A7B1;
+    text-decoration: underline;
+
+}
+
+.address-container {
+    margin-top: 10px;
+    display: flex;
+    width: max-content;
+    gap: 50px;
+}
+
+.nome-cep{
+    display: flex;
+    gap: 100px;
+    color: #6A066D;
+    font-weight: bold;
+} 
+
+.enderecos{
+    display: flex;
+    flex-direction: column;
 }
