@@ -1,5 +1,8 @@
 .woocommerce table.shop_table {
     border: none;
+}
+
+.woocommerce-orders-table.woocommerce-MyAccount-orders.shop_table.shop_table_responsive.my_account_orders.account-orders-table {
     text-align: center;
 }
 
@@ -21,4 +24,91 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.order-paragraph mark {
+    background-color: #E7FAFE;
+}
+
+.order-details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-order-details {
+    align-items: flex-start;
+}
+
+.wc-item-meta li {
+    display: none;
+}
+
+.woocommerce-table__product-total.product-total {
+    display: none;
+}
+
+.woocommerce-table__product-table.product-total {
+    display: none;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
+    display: flex;
+    text-align: left;
+}
+
+.woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 {
+    float: none;
+    margin-top: 30px;
+}
+
+.woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 address .nome-cep .cep {
+   position: relative;
+   top: 80px;
+   right: 220px;
+}
+
+.woocommerce-column.woocommerce-column--2.woocommerce-column--shipping-address.col-2 address .nome-cep p {
+    color: black;
+    font-weight: normal;
+ }
+
+.woocommerce-column.woocommerce-column--1.woocommerce-column--billing-address.col-1 {
+    display: none;
+}
+
+.woocommerce table.shop_table tfoot td {
+    border: none;
+}
+
+.woocommerce table.shop_table tfoot th {
+    border: none;
+}
+
+.woocommerce .woocommerce-customer-details address {
+    border: none;
+    margin-top: 10px;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tbody {
+    position: relative;
+    top: 50px;
+    right: 90px;
+    min-width: 250px;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tfoot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 190px;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tfoot tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tfoot td {
+    font-weight: normal;
 }
