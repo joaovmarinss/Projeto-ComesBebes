@@ -95,6 +95,13 @@ textarea:focus, input:focus, select:focus {
     z-index: 99999999;
 
 }
+#content-carrinho{
+    height: 75%;
+    overflow-y: scroll;
+}
+#content-box-h{
+    align-items: flex-end;
+}
 #title-modalcarrinho{
     font-size: 32px;
     font-weight: 700;
@@ -166,4 +173,15 @@ textarea:focus, input:focus, select:focus {
         justify-content: center;
         
     }
+}
+#content-carrinho{
+    display: flex;
+    justify-content: center;
+}
+#modalcarrinho-h{
+    min-width: 395px;
+}
+td.actions button.button{
+    background-color: #7A247D;
+    color: white;
 }
