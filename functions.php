@@ -43,6 +43,7 @@
       ];
       return wc_get_products($args);
     }
+    
 
     function transforma_menu($itens){
       foreach($itens as $item){
@@ -70,10 +71,14 @@
      
       return $menu_links;
     }
-
-
-
     add_filter( 'woocommerce_save_account_details_required_fields', 'misha_myaccount_required_fields' );
+    
+    function link_2(){
+      $link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+      return $link;
+    }
+    add_filter('woocommerce_add_to_cart_redirect', 'link_2');
+
     function misha_myaccount_required_fields( $account_fields ) {
       //unset( $account_fields[ 'account_last_name' ] );
       //unset( $account_fields[ 'account_first_name' ] ); // First name

@@ -22,22 +22,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 
 	<div class="related products">
-
-		<h2 id='tipo-categoria'></h2>
 		<?php global $product; ?>
-		<h2 id='tipo-categoria'>Mais comida <?php echo $product->get_categories( ', ', ' ' . _n( ' ', '  ', $cat_count, 'woocommerce' ) . ' ', ' ' );?></h2>
-		<?php woocommerce_product_loop_start(); ?>
-
+		<h2 class='tipo-categoria'>Mais comida <?php echo $product->get_categories();?></h2>
+		
+		<?php woocommerce_product_loop_start();?>
+			
 			<?php foreach ( $related_products as $related_product ) : ?>
-
-					<?php
-					$post_object = get_post( $related_product->get_id() );
-
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-					wc_get_template_part( 'content', 'product' );
-					?>
-
+					<?php if($product->category_ids[0] == $related_product->category_ids[0]) {?>
+						<?php
+						$post_object = get_post( $related_product->get_id() );?>
+						
+						<?php setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found ?>
+						
+						
+						<?php wc_get_template_part( 'content', 'product' );?>
+						
+					<?php } ?>
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
