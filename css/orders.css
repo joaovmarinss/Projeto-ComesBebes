@@ -16,3 +16,9 @@
     background-color: transparent;
     border: solid 2px #6A066D;
 }
+
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
