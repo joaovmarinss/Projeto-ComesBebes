@@ -39,3 +39,8 @@ label .required {
 .show-password-input{
     display: none;
 }
+
+input {
+    border: none;
+    border-bottom: solid 2px #6A066D;
+}
