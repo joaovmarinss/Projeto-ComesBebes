@@ -44,7 +44,16 @@
                         
                         <tbody class="atualiza">
                             <?php do_action( 'woocommerce_before_cart_contents' ); ?>
-                            
+                            <?php do_action( 'woocommerce_before_cart_contents' ); ?>
+                                <tr class="atualiza">
+                                    <td colspan="6" class="actions">
+                                        <button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>">ATUALIZAR CARRINHO</button>
+
+                                        <?php do_action( 'woocommerce_cart_actions' ); ?>
+
+                                        <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+                                    </td>
+                            </tr>
                             <?php
                             
                             foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -126,16 +135,7 @@
                                 }
                             }
                             ?>
-                            <tr class="atualiza">
-                                <td colspan="6" class="actions">
-                                    <button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
-
-                                    <?php do_action( 'woocommerce_cart_actions' ); ?>
-
-                                    <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
-                                </td>
-                            </tr>
-                            <?php do_action( 'woocommerce_cart_contents' ); ?>
+                            
 
                             
 
@@ -150,10 +150,19 @@
             <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
                 <div id="totalbtn-modalcar-h">
                     <div id="total-modal-h">
-                    <p>Total do Carrinho:</p>
+                    <p>Total do Carrinho: <?php echo WC()->cart->get_cart_subtotal() ?></p>
                     
                     </div>
-                    <button id="btnbuy-mc-h">COMPRAR</button>    
+                    <div id="botao-compra">
+                        <button type="submit" class="button TENTA" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><a href="http://projeto-comes-e-bebes.local/checkout/">COMPRAR</a></button>
+
+                        <?php do_action( 'woocommerce_cart_actions' ); ?>
+
+                        <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+                                
+                            
+                        <?php do_action( 'woocommerce_cart_contents' ); ?> 
+                    </div>  
                 </div>   
 
             </div>

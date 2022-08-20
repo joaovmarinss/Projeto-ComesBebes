@@ -48,7 +48,8 @@ for(var a = 0; a<4; a++){
         break;
     }
 }
-const atualizar = document.querySelector(".actions")
+const atualizar = document.querySelector(".TENTA")
+
 atualizar.firstElementChild.innerHTML='COMPRAR'
 
 function opencartao(){

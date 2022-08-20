@@ -18,7 +18,9 @@
 .woocommerce{
     background-color: #E7FAFE;
 }
-
+.col-2{
+    display: none;
+}
 .woocommerce-Input{
     border: none;
     border-bottom: solid 2px #6A066D;
@@ -32,4 +34,30 @@ body{
 
 .insertp, .orderby, .search-field{
     background-color: #E7FAFE;
+}
+#content-checkout{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+#checkout{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1150px){
+    #content-checkout{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .woocommerce-checkout{
+        
+    }
+}
+#texto-carrinho-checkout{
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 1px solid black;
+}
+#padding-checkout{
+    padding-top: 9px;
 }
