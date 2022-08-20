@@ -42,29 +42,50 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                     <div class="col-1">
                         <?php do_action( 'woocommerce_checkout_billing' ); ?>
                     </div>
-
-                    <div class="col-2">
-                        <?php do_action( 'woocommerce_checkout_shipping' ); ?>
-                    </div>
                 </div>
 
                 <?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
             <?php endif; ?>
-            
-            <?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-            
-            <h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-            
-            <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
+            <div id="infpag">
+		<h2 id='titleinf'>Informações de Pagamento</h2>
+		<h3>Formas de Pagamento</h3>
+	<div id="butspag">
+		<div id='dinheiro' onclick="exitcartao()">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>\assets/dinheiroimg.png" id="">
+			<div>
+				<h5>Dinheiro</h5>
+				<h6>Na entrega</h6>
+			</div>
+		</div>
+		<div id='cartao' onclick="opencartao()">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>\assets/cartaoimg.png" id="">
+			<h5>Cartão</h5>
+		</div>
+	</div>
+	<div id="cartaopag">
+			<h3>Numero do Cartao</h3>
+			<input  placeholder = "xxxx.xxxx.xxxx.xxx" id='inpnum'>
+			<div id='valcvv'>
+				<div id='val'>
+					<h3>Validade do cartão</h3>
+					<input placeholder = "MM/AA" id='inpval'>
+				</div>
+				<div id='cvv'>
+					<h3>CVV</h3>
+					<input  placeholder = "XXX" id='inpcvv'>
+				</div>
+			</div>	
+		</div>			
+</div> 
             <div id="order_review" class="woocommerce-checkout-review-order">
                 <?php do_action( 'woocommerce_checkout_order_review' ); ?>
             </div>
 
-            <?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+            
 
         </form>
+                
     </div>
 
     <div id="tentativa-2">
@@ -138,13 +159,13 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                                                 }
                                                 ?>
                                                 </td>
-
+                                                
                                                 <td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
                                                     <?php
                                                         echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
                                                     ?>
                                                 </td>
-
+                                                    
                                                 
                                             
 
@@ -170,6 +191,8 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
                     <p id="padding-checkout">Entrega: <span>R$ 5,00</span></p>
                     <p id="texto-carrinho-checkout">Total do Carrinho: <?php echo WC()->cart->get_cart_subtotal(1) ?></p>
     </div>
+
 </div>
+
 </div>
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
