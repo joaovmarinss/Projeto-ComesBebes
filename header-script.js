@@ -60,3 +60,6 @@ function exitcartao(){
     let cartao = document.querySelector("#cartaopag")
     cartao.style.display = 'none' ;
 }
+const tirar = document.querySelector("#order_review")
+console.log(tirar.children[0])
+tirar.firstChild.remove()
