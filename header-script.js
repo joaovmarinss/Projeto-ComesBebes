@@ -60,6 +60,5 @@ function exitcartao(){
     let cartao = document.querySelector("#cartaopag")
     cartao.style.display = 'none' ;
 }
-const tirar = document.querySelector("#order_review")
-console.log(tirar.children[0])
-tirar.firstChild.remove()
+const linkamento = document.querySelector('.woocommerce-message')
+linkamento.innerHTML = '<a href="http://projeto-comes-e-bebes.local/shop/" tabindex="1" class="button wc-forward">Continuar comprando</a>  adicionado ao seu carrinho.	'
